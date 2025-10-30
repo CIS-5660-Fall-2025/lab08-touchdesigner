@@ -1,14 +1,11 @@
 # lab08-touchdesigner
-Let's get introduced to TouchDesigner. For this week's lab our main focus is just getting TouchDesigner installed, dealing with licensing issues/potential problems, and becoming more familiar with how the UI and basic operators work.
 
-## 1. Downloading Touchdesigner & Getting Set Up
-First, go to this link and download TD if you haven't already: https://derivative.ca/download. Create an account for Derivative in order to login to TD when you open it for the first time. Once TD is open, login using your details and click "Create a New Key" in order to have your free license verified.
-## 2. Creating a Slit-Scan Effect using TOPs
-In class, this process was demoed so if you were able to follow along, modify the project as you see fit. Think about how gradients, ramps, and toolbox functions can be used to modify your visual output.
+For the lab I followed along in class to get the following visual output
 
-If you were not in class today, please follow this short video of me giving an overview of the node network and create it as you see fit. 
-Link to tutorial: https://youtu.be/fz_PxG5KoNE
-## Submission
-- Create a pull request against this repository
-- In your readme, upload some screenshots of your final result along with your .toe file and format your README nicely
-- Profit
+https://github.com/user-attachments/assets/c3735732-08d0-4424-be26-d2d6bb726728
+
+I then messed around with audio, and created a distortion effect. This analyzes an input audio file for low, mid, high, and kick, then uses those values to scale up noise that is applied to a sphere geometry:
+
+<img width="838" height="341" alt="AudioDistortion" src="https://github.com/user-attachments/assets/d224c2e6-5d03-4aa8-8aa1-bf1462e04561" />
+
+https://github.com/user-attachments/assets/4ac93ece-71e8-47da-88b5-fcad62c82f61
