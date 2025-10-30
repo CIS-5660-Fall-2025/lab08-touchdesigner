@@ -1,14 +1,33 @@
-# lab08-touchdesigner
-Let's get introduced to TouchDesigner. For this week's lab our main focus is just getting TouchDesigner installed, dealing with licensing issues/potential problems, and becoming more familiar with how the UI and basic operators work.
+# Lab 08 — TouchDesigner
 
-## 1. Downloading Touchdesigner & Getting Set Up
-First, go to this link and download TD if you haven't already: https://derivative.ca/download. Create an account for Derivative in order to login to TD when you open it for the first time. Once TD is open, login using your details and click "Create a New Key" in order to have your free license verified.
-## 2. Creating a Slit-Scan Effect using TOPs
-In class, this process was demoed so if you were able to follow along, modify the project as you see fit. Think about how gradients, ramps, and toolbox functions can be used to modify your visual output.
+## Overview
 
-If you were not in class today, please follow this short video of me giving an overview of the node network and create it as you see fit. 
-Link to tutorial: https://youtu.be/fz_PxG5KoNE
-## Submission
-- Create a pull request against this repository
-- In your readme, upload some screenshots of your final result along with your .toe file and format your README nicely
-- Profit
+For this lab, I installed TouchDesigner, set up my license, and explored the basic UI and TOP operators.  
+The main exercise was creating a **slit-scan effect** using TOPs.
+
+---
+
+## Slit-Scan Effect
+
+Following the class demo (and the [tutorial video](https://youtu.be/fz_PxG5KoNE)), I recreated the slit-scan network and experimented with different parameters such as ramps and noise to modify the visual result.
+
+### Final Output
+
+| Screenshot 1                       | Screenshot 2                       |
+| ---------------------------------- | ---------------------------------- |
+| <img src="img/1.png" width="400"/> | <img src="img/2.png" width="400"/> |
+
+---
+
+## Files Included
+
+- `lab.toe` — my TouchDesigner project file
+- `1.png`, `2.png` — screenshots of the final output
+- `README.md` — this file
+
+---
+
+## Notes
+
+I explored how changing the ramp positions and blending methods affected the final slit-scan effect.  
+Overall, this lab helped me get comfortable with the TouchDesigner interface and node-based workflows.
