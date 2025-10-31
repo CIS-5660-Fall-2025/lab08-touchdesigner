@@ -1,6 +1,12 @@
 # lab08-touchdesigner
 Let's get introduced to TouchDesigner. For this week's lab our main focus is just getting TouchDesigner installed, dealing with licensing issues/potential problems, and becoming more familiar with how the UI and basic operators work.
 
+![](Images/img1.png)
+
+
+![](Images/img2.png)
+
+
 ## 1. Downloading Touchdesigner & Getting Set Up
 First, go to this link and download TD if you haven't already: https://derivative.ca/download. Create an account for Derivative in order to login to TD when you open it for the first time. Once TD is open, login using your details and click "Create a New Key" in order to have your free license verified.
 ## 2. Creating a Slit-Scan Effect using TOPs
