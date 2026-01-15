@@ -1,4 +1,16 @@
 # lab08-touchdesigner
+
+Practice of using TouchDesigner
+
+General setup:
+![setup](./setup.png)
+
+Result 1:
+![1](./out1.gif)
+
+Result 2:
+![2](./out2.gif)
+
 Let's get introduced to TouchDesigner. For this week's lab our main focus is just getting TouchDesigner installed, dealing with licensing issues/potential problems, and becoming more familiar with how the UI and basic operators work.
 
 ## 1. Downloading Touchdesigner & Getting Set Up
