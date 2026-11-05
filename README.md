@@ -1,14 +1,55 @@
-# lab08-touchdesigner
-Let's get introduced to TouchDesigner. For this week's lab our main focus is just getting TouchDesigner installed, dealing with licensing issues/potential problems, and becoming more familiar with how the UI and basic operators work.
+# CHRONOFOLD
 
-## 1. Downloading Touchdesigner & Getting Set Up
-First, go to this link and download TD if you haven't already: https://derivative.ca/download. Create an account for Derivative in order to login to TD when you open it for the first time. Once TD is open, login using your details and click "Create a New Key" in order to have your free license verified.
-## 2. Creating a Slit-Scan Effect using TOPs
-In class, this process was demoed so if you were able to follow along, modify the project as you see fit. Think about how gradients, ramps, and toolbox functions can be used to modify your visual output.
+**CIS 5660 — Lab 08: TouchDesigner**
 
-If you were not in class today, please follow this short video of me giving an overview of the node network and create it as you see fit. 
-Link to tutorial: https://youtu.be/fz_PxG5KoNE
-## Submission
-- Create a pull request against this repository
-- In your readme, upload some screenshots of your final result along with your .toe file and format your README nicely
-- Profit
+Jingyu Fu
+
+A slit-scan effect made from six animated arcs. Instead of a camera feed, the
+input is generated with Circle TOPs, so the project runs without external media.
+
+## Results
+
+| Horizontal scan | Horizontal scan with steps |
+| --- | --- |
+| ![Horizontal scan](screenshots/horizontal_smooth.png) | ![Stepped horizontal scan](screenshots/horizontal_stepped.png) |
+
+| Vertical scan with steps | Radial scan |
+| --- | --- |
+| ![Stepped vertical scan](screenshots/vertical_stepped.png) | ![Radial scan](screenshots/radial_bands.png) |
+
+The smooth ramp bends the arcs continuously. Adding steps breaks them into
+separate slices. A radial ramp makes those time differences spread outward
+from the center.
+
+## How it works
+
+```text
+Animated arcs → Texture 3D ─────┐
+                              ├→ Time Machine → Out
+Ramp → Limit ──────────────────┘
+```
+
+Texture 3D stores the last 120 frames. Time Machine uses the grayscale ramp to
+choose which frame to show at each pixel: darker areas show older frames,
+while lighter areas show more recent ones. Limit quantizes the ramp to create
+the stepped versions. A Constant CHOP keeps the cache size and time offsets
+linked to the same frame count.
+
+## Open and adjust
+
+Open [`chronofold.toe`](chronofold.toe) in TouchDesigner and let it play for a
+couple of seconds to fill the history. Right-click `out1` and select **View**
+for a larger preview.
+
+To change settings, go up one level with **U**, select `chronofold`, press **P**,
+and open the **Slit Scan** parameter page.
+
+- **Scan direction:** horizontal, vertical, or radial.
+- **Time map style / Map divisions:** smooth or stepped, with adjustable slice size.
+- **History frames / Time distortion:** adjust how far back the effect samples.
+- **Animation speed / Reverse time direction:** change the motion and the order of time.
+
+Built with TouchDesigner **2025.33230** at **768 × 768**.
+
+Based on the [course slit-scan tutorial](https://youtu.be/fz_PxG5KoNE), with a
+procedural input and additional scan patterns.
