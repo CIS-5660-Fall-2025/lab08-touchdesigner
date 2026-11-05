@@ -1,0 +1,44 @@
+{
+  "runtime_verified": true,
+  "effect": "/project1/chronofold",
+  "presets": {
+    "horizontal_smooth": {
+      "scan_mode": "horizontal",
+      "quantization": "smooth",
+      "mean_difference_from_source": 0.06216611713171005,
+      "time_map_min": 0.0006508827209472656,
+      "time_map_max": 0.9990234375
+    },
+    "horizontal_stepped": {
+      "scan_mode": "horizontal",
+      "quantization": "position",
+      "mean_difference_from_source": 0.06263679265975952,
+      "time_map_min": 0.0006508827209472656,
+      "time_map_max": 0.9443359375
+    },
+    "vertical_stepped": {
+      "scan_mode": "vertical",
+      "quantization": "position",
+      "mean_difference_from_source": 0.061424776911735535,
+      "time_map_min": 0.0006508827209472656,
+      "time_map_max": 0.9443359375
+    },
+    "radial_bands": {
+      "scan_mode": "radial",
+      "quantization": "value",
+      "mean_difference_from_source": 0.06082918494939804,
+      "time_map_min": 0.0555419921875,
+      "time_map_max": 1.0
+    }
+  },
+  "operator_errors": "",
+  "script_errors": "",
+  "warnings": "",
+  "resolution": [
+    768,
+    768
+  ],
+  "history_depth": 120,
+  "history_frames": 120,
+  "zero_amount_mean_error": 0.0
+}

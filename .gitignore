@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+Backup/
+*.toe.bak
+*.tox.bak
+chronofold.[0-9]*.toe
